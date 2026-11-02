@@ -14,4 +14,4 @@
 
 **开源与复现：** Apache-2.0。`npm ci && npm test`、三个 `moon test --target` 命令、CLI 样例见 [README](../README.md)。第三方规范、测试样本和依赖见 [THIRD_PARTY](../THIRD_PARTY.md)。
 
-**仍需填入：** GitHub ID 已从参考申报书获知；[公开仓库](https://github.com/wangjiale6036-dotcom/moonpmtiles)已有一次已核验的浏览器上传提交。仍需核验 CI 配置与运行链接、后续真实提交记录、赛事方内部查重答复。填入并复核前，不提交本草稿。
+**仍需填入：** GitHub ID 已从参考申报书获知；[公开仓库](https://github.com/wangjiale6036-dotcom/moonpmtiles)已包含完整源码，[首次 CI](https://github.com/wangjiale6036-dotcom/moonpmtiles/actions/runs/41454771328) 四项任务通过。仍需后续真实持续提交记录、赛事方内部查重答复。填入并复核前，不提交本草稿。

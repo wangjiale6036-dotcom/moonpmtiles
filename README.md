@@ -2,7 +2,7 @@
 
 MoonBit 实现的 [PMTiles v3](https://github.com/protomaps/PMTiles/blob/main/spec/v3/spec.md) 只读归档核心。输入地图瓦片坐标 `(z, x, y)`，通过 Hilbert TileID 和根/叶目录定位瓦片，只请求所需字节。项目提供 Node.js 本地文件与 HTTP Range 适配，以及一个 MoonBit MVT 图层摘要消费示例。
 
-**状态：开发预览版。核心源码和测试已进入[公开仓库](https://github.com/wangjiale6036-dotcom/moonpmtiles)；线上 CI 结果尚未核验，也没有赛事内部查重结论。** 现有证据不能保证通过黑客松初审；[验证记录](docs/VALIDATION.zh-CN.md)列出已完成项和申报前缺口。
+**状态：开发预览版。核心源码和测试已进入[公开仓库](https://github.com/wangjiale6036-dotcom/moonpmtiles)，[首次线上 CI](https://github.com/wangjiale6036-dotcom/moonpmtiles/actions/runs/41454771328) 的四项任务全部通过；赛事内部查重尚无结论。** 现有证据不能保证通过黑客松初审；[验证记录](docs/VALIDATION.zh-CN.md)列出已完成项和申报前缺口。
 
 ## 运行
 
@@ -52,6 +52,6 @@ let tile = @moonpmtiles.read_tile(reader, 0, 0, 0)
 
 ## 来源与申报
 
-格式遵循 [Protomaps PMTiles v3 规范](https://github.com/protomaps/PMTiles/blob/main/spec/v3/spec.md)；这是 MoonBit 生态移植，不声称 PMTiles 或随机访问技术首创。[第三方说明](THIRD_PARTY.md)记录来源与许可。`test-fixtures/generated/` 是本地生成的**合成数据**，`test-fixtures/upstream/` 是从 Protomaps 仓库取得并以 SHA-256 固定的真实测试归档；测试用 `pmtiles@4.5.0` 官方 JS 包逐瓦片比较。多级叶目录另通过 [Overture 2026-10-21 公开归档](https://docs.overturemaps.org/examples/overture-tiles/) 的在线 Range 对照验证，证据见[验证记录](docs/VALIDATION.zh-CN.md)。仍需赛事方核对未公开报名方向、补齐 CI 并形成实际持续提交记录，才可作为申报版本。[选题复查](docs/NOVELTY.zh-CN.md)说明公开查重的时间范围和限制。
+格式遵循 [Protomaps PMTiles v3 规范](https://github.com/protomaps/PMTiles/blob/main/spec/v3/spec.md)；这是 MoonBit 生态移植，不声称 PMTiles 或随机访问技术首创。[第三方说明](THIRD_PARTY.md)记录来源与许可。`test-fixtures/generated/` 是本地生成的**合成数据**，`test-fixtures/upstream/` 是从 Protomaps 仓库取得并以 SHA-256 固定的真实测试归档；测试用 `pmtiles@4.5.0` 官方 JS 包逐瓦片比较。多级叶目录另通过 [Overture 2026-10-21 公开归档](https://docs.overturemaps.org/examples/overture-tiles/) 的在线 Range 对照验证，证据见[验证记录](docs/VALIDATION.zh-CN.md)。仍需赛事方核对未公开报名方向，并通过后续工作形成实际持续提交记录，才可作为申报版本。[选题复查](docs/NOVELTY.zh-CN.md)说明公开查重的时间范围和限制。
 
 许可证：Apache-2.0，见 [LICENSE](LICENSE)。
