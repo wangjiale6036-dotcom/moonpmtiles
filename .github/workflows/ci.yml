@@ -1,0 +1,27 @@
+name: MoonPMTiles CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        target: [js, wasm-gc, native]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hustcer/setup-moonbit@v1.22
+      - run: moon test --target ${{ matrix.target }}
+
+  node-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hustcer/setup-moonbit@v1.22
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci
+      - run: npm test

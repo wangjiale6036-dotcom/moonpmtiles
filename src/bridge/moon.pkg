@@ -1,0 +1,18 @@
+import {
+  "wangjiale6036-dotcom/moonpmtiles",
+}
+
+options(
+  link: {
+    "js": {
+      "exports": [
+        "header_hex",
+        "step_hex",
+        "mvt_summary_hex",
+        "cover_bounds_json",
+        "audit_directory_hex",
+      ],
+      "format": "esm",
+    },
+  },
+)

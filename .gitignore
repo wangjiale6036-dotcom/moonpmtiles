@@ -1,0 +1,7 @@
+/_build/
+/dist/
+/test-fixtures/generated/
+/.mooncakes/
+/node_modules/
+/.npm-cache/
+**/pkg.generated.mbti
