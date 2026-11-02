@@ -10,4 +10,6 @@ readme = "README.md"
 
 description = "PMTiles v3 range-reading and tile lookup for MoonBit"
 
+repository = "https://github.com/wangjiale6036-dotcom/moonpmtiles"
+
 preferred_target = "js"
