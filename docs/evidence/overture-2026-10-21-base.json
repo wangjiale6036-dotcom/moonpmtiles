@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-02T12:20:20.219Z",
+  "source": "https://overturemaps-extras-us-west-2.s3.us-west-2.amazonaws.com/tiles/2026-10-21.0/base.pmtiles",
+  "sourceETag": "\"2b3d618ce504cffdcb44d669b5fa1e2a-715\"",
+  "archiveBytes": "191739583566",
+  "coordinate": "1/0/0",
+  "tileOffset": "8930919",
+  "storedTileBytes": 3162059,
+  "decodedTileBytes": 5745572,
+  "decodedTileSHA256": "c583a979b0c9ad31a449ea4630e69844af25a59218bd477af831735146ba3b31",
+  "mvtLayers": [
+    {
+      "name": "bathymetry",
+      "features": 107455,
+      "extent": 4096,
+      "version": 2
+    },
+    {
+      "name": "land",
+      "features": 25386,
+      "extent": 4096,
+      "version": 2
+    },
+    {
+      "name": "land_cover",
+      "features": 723,
+      "extent": 4096,
+      "version": 2
+    },
+    {
+      "name": "water",
+      "features": 14169,
+      "extent": 4096,
+      "version": 2
+    }
+  ],
+  "metadataName": "Overture base",
+  "matchOfficialPMTilesJS": true,
+  "fetchedRanges": [
+    {
+      "offset": "0",
+      "length": 16384
+    },
+    {
+      "offset": "191671853141",
+      "length": 546
+    },
+    {
+      "offset": "191671853687",
+      "length": 20501
+    },
+    {
+      "offset": "8930919",
+      "length": 3162059
+    }
+  ],
+  "fetchedBytes": 3199490
+}

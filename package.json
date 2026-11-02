@@ -1,0 +1,17 @@
+{
+  "name": "moonpmtiles-local-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "fixture": "node test-fixtures/create.mjs",
+    "test": "node build.mjs && node test-fixtures/create.mjs && node --test test/reader.test.mjs",
+    "verify:overture": "node scripts/overture-check.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "pmtiles": "4.5.0"
+  }
+}
